@@ -12,6 +12,7 @@ echo "▶ Copio config Claude globale..."
 mkdir -p ~/.claude/skills
 cp -rf "$DOTFILES/claude/skills/." ~/.claude/skills/ 2>/dev/null || true
 cp -f  "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md 2>/dev/null || true
+cp -f  "$DOTFILES/claude/settings.json" ~/.claude/settings.json 2>/dev/null || true
 
 echo "▶ Registro MCP Ruflo (globale, cross-progetto)..."
 claude mcp remove --scope user ruflo >/dev/null 2>&1 || true
