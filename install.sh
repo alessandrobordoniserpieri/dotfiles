@@ -5,10 +5,16 @@ DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "▶ Installo Claude Code CLI..."
 npm install -g @anthropic-ai/claude-code
 
+echo "▶ Installo Ruflo globalmente..."
+npm install -g ruflo@latest
+
 echo "▶ Copio config Claude globale..."
 mkdir -p ~/.claude/skills
 cp -rf "$DOTFILES/claude/skills/." ~/.claude/skills/ 2>/dev/null || true
 cp -f  "$DOTFILES/claude/CLAUDE.md" ~/.claude/CLAUDE.md 2>/dev/null || true
 
-echo "✅ Setup completato. Claude Code pronto."
-echo "Per aggiungere MCP: claude mcp add --scope user <nome> -- <comando>"
+echo "▶ Registro MCP Ruflo (globale, cross-progetto)..."
+claude mcp remove --scope user ruflo >/dev/null 2>&1 || true
+claude mcp add --scope user ruflo -- ruflo mcp start
+
+echo "✅ Setup completato."
