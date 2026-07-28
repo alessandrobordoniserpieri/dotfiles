@@ -4,3 +4,7 @@ External reference material about Claude Code itself — not skills to invoke, b
 
 - **[claude-code-skills.md](./claude-code-skills.md)** — Frontmatter fields (17) and official bundled skills (13). Useful when writing new skills or checking what's available out of the box.
 - **[everything-claude-code](https://github.com/worldflowai/everything-claude-code)** — Production-ready agents, rules, skills, hooks, and MCP configs from an Anthropic hackathon winner. Source for the `claude/agents/` and `claude/rules/` in this repo.
+
+## Tools & Projects
+
+- **[tools.md](./tools.md)** — Tool e progetti utili da installare in futuro (Project N.O.M.A.D., ecc.).
