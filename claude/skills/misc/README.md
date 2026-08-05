@@ -2,6 +2,7 @@
 
 Tools I keep around but rarely use — not promoted in the plugin.
 
+- **[find-skills](./find-skills/SKILL.md)** — Discover and install skills from the open agent skills ecosystem via `npx skills find`/`npx skills add` ([source: vercel-labs/skills](https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md)).
 - **[git-guardrails-claude-code](./git-guardrails-claude-code/SKILL.md)** — Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, etc.) before they execute.
 - **[migrate-to-shoehorn](./migrate-to-shoehorn/SKILL.md)** — Migrate test files from `as` type assertions to @total-typescript/shoehorn.
 - **[scaffold-exercises](./scaffold-exercises/SKILL.md)** — Create exercise directory structures with sections, problems, solutions, and explainers.
